@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoguessr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="jogo1">
+        <div class="imagem">    
+            <img class="img_fin" src="https://blog.assistentedeviagem.com.br/wp-content/uploads/2022/09/finlandia-turismo-1-1.jpg" alt=""> <br>
+        </div>
+        <div id="jogo12">
+            <button onclick="certo1()">Finlandia</button>
+            <button onclick="meio1()">Suécia</button>
+            <button onclick="errado1()">Brasil</button>
+            <button onclick="errado1()">Irlanda</button>
+        </div>
+    </div>
+    <div id="jogo2">
+        aaaaaaaaaaaaaaaaa
+    </div>
+</body>
+</html>
+<script>
+    var ponto = 0
+function certo1(){
+    ponto++
+    alert('dale ' + ponto)
+    document.getElementById("jogo1").style.display = "none"
+    document.getElementById("jogo2").style.display = "flex"
+}
+function meio1(){
+    ponto = ponto + 0.5
+    alert('qse dale ' + ponto)
+    document.getElementById("jogo1").style.display = "none"
+    document.getElementById("jogo2").style.display = "flex"
+}
+function errado1(){
+    alert('isso n foi dale mano')
+    document.getElementById("jogo1").style.display = "none"
+    document.getElementById("jogo2").style.display = "flex"
+}
+</script>

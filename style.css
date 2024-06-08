@@ -1,0 +1,44 @@
+.img_fin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 50%;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 40vh;
+    width: 50%;
+}
+
+#jogo1 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 30px;   
+}
+
+#jogo12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50vh;
+    padding-right: 50%;
+    height: 30%;
+}
+
+button{
+    margin: 15px;
+    height: 60px;
+    width: 80px;
+}
+
+#jogo2 {
+    display: none;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 30px;  
+}
