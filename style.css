@@ -1,44 +1,164 @@
-.img_fin {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40%;
-    width: 50%;
-}
-
-.imagem {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 40vh;
-    width: 50%;
-}
-
-#jogo1 {
-    display: flex;
-    justify-content: center;
     height: 100vh;
-    padding-left: 30px;   
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #79E083;
 }
 
-#jogo12 {
+#welcome-screen {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-top: 50vh;
-    padding-right: 50%;
-    height: 30%;
+    flex-direction: column;
+    height: 100vh;
 }
 
-button{
-    margin: 15px;
-    height: 60px;
-    width: 80px;
+#welcome-screen h1, p, button {
+    color: white
 }
 
-#jogo2 {
+#welcome-screen h1 {
+    font-size: 50pt;
+    text-shadow: 10px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+#welcome-screen p {
+    font-size: 10pt;
+}
+
+#welcome-screen button {
+    font-size: 34pt;
+    height: 10vh;
+    width: 40vw;
+}
+
+#welcome-screen span {
+    color: blue;
+}
+
+#welcome-screen button, .question-container button, #game-over button {
+    background-color: #E3B640;
+    margin: 30px;
+    border-radius: 168px;
+    box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: #E3B640;
+}
+
+.welcome {
+    margin-bottom: 20vh;
+}
+
+.welcome h1 {
+    margin-bottom: 10vh;
+}
+
+.credits {
+    display: flex;
+    text-align: left;
+    align-self: flex-end;
+}
+
+#welcome-screen p {
+    font-size: 15pt;
+}
+
+.question-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-container p {
+    font-size: 34pt;
+    color: black;
+    margin-bottom: 10vh;
+}
+
+.question-image-container {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.question-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-container button {
+    font-size: 12pt;
+    height: 8vh;
+    width: 20vw;
+}
+
+#game-over {
     display: none;
-    justify-content: center;
-    height: 100vh;
-    padding-left: 30px;  
+    text-align: center;
+    margin-top: 20px;
+}
+
+#game-over h2 {
+    font-size: 50pt;
+    margin-bottom: 10vh;
+}
+
+#game-over p {
+    font-size: 30pt;
+    margin-bottom: 10vh;
+}
+
+#game-over button {
+    font-size: 34pt;
+    height: 10vh;
+    width: 40vw;
 }
