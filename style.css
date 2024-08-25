@@ -49,7 +49,7 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #79E083;
+    background-color: #52b95c;
 }
 
 #welcome-screen {
@@ -84,11 +84,11 @@ body {
 }
 
 #welcome-screen button, .question-container button, #game-over button {
-    background-color: #E3B640;
+    background-color: #d1ab4a;
     margin: 30px;
     border-radius: 168px;
     box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.2);
-    border-color: #E3B640;
+    border-color: #a7842e;
 }
 
 .welcome {
