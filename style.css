@@ -49,7 +49,10 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #52b95c;
+    /* background-color: #52b95c; */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), #52b95c),
+                url('https://wallpaperaccess.com/full/541578.jpg') center/cover;
+    
 }
 
 #welcome-screen {
@@ -60,7 +63,7 @@ body {
     height: 100vh;
 }
 
-#welcome-screen h1, p, button {
+#welcome-screen h1, button {
     color: white
 }
 
@@ -149,7 +152,15 @@ body {
 
 #game-over h2 {
     font-size: 50pt;
+    margin-top: 10vh;
     margin-bottom: 10vh;
+}
+
+.rainbow {
+    font-size: 60pt;
+    animation-name: text-color-show;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 #game-over p {
@@ -161,4 +172,38 @@ body {
     font-size: 34pt;
     height: 10vh;
     width: 40vw;
+}
+
+@keyframes slide-right {
+    0% {
+        background-color: transparent;
+        transform: translateX(-100%);
+    }
+    100% {
+        background-color: #52b95c;
+        transform: translateX(0);
+    }
+}
+
+@keyframes imgGone {
+    0% {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), #52b95c),
+                url('https://wallpaperaccess.com/full/541578.jpg') center/cover;
+    }
+    100% {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), #52b95c);
+    }
+}
+
+@keyframes text-color-show {
+    0%   {color: red;}
+    20%  {color: yellow;}
+    40%  {color: blue;}
+    60% {color: green;}
+    80% {color: pink;}
+    100% {color: purple;}
+  }
+
+body {
+    animation: slide-right 3s ease forwards;
 }

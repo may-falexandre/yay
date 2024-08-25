@@ -75,7 +75,7 @@ function checkAnswer(selectedIndex) {
             const gameOverElement = document.getElementById('game-over');
             gameOverElement.style.display = 'block';
             const h2Element = document.querySelector("#game-over h2");
-            h2Element.textContent = `Parabéns! Você concluiu o quiz. Com ${acertos} acertos e ${erros} erros!`;
+            h2Element.textContent = `Você concluiu o quiz. Com ${acertos} acertos e ${erros} erros!`;
             const playAgainButton = document.getElementById('play-again-button');
 
             playAgainButton.addEventListener('click', () => {
@@ -90,11 +90,20 @@ function checkAnswer(selectedIndex) {
     }
 }
 
+function hideBackground() {
+    const body = document.body;
+
+    body.style.animationName = "imgGone"
+    body.style.animationDuration = "0.2s"
+}
+
+
 const welcomeScreen = document.getElementById('welcome-screen');
 const questionContainer = document.querySelector('.question-container');
 const startButton = document.getElementById('start-button');
 
 startButton.addEventListener('click', () => {
+    hideBackground();
     welcomeScreen.style.display = 'none';
     questionContainer.style.display = 'block';
     displayQuestion();
